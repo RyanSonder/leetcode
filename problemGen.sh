@@ -8,9 +8,13 @@ fi
 
 
 prob_path="src/problems/"
+domain="https://leetcode.com/problems/${1//_/-}/"
+
 # Create the Python file and initialize it with the class definition
 PYTHON_FILE=$prob_path"$1.py"
 cat <<EOL > "$PYTHON_FILE"
+# $domain
+
 class $1:
 
     def solution(self):
