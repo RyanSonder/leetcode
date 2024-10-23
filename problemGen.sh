@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 
-prob_path="src/problems/"
+prob_path="src/"
 domain="https://leetcode.com/problems/${1//_/-}/"
 
 # Create the Python file and initialize it with the class definition
@@ -22,14 +22,14 @@ class $1:
 EOL
 
 
-test_path="tests/problems/"
+test_path="tests/"
 # Make blank unit tests
 TEST_FILE=$test_path"test_$1.py"
 cat <<EOL > "$TEST_FILE"
 import pytest
-from $1 import *
+from src.$1 import *
 
-def test_solution():
-    ...
+def test_not_implemented():
+    assert False
 
 EOL
