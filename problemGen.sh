@@ -8,10 +8,24 @@ fi
 
 
 prob_path="src/problems/"
-# Make problem directory within src/problems
-touch $prob_path"$1".py
+# Create the Python file and initialize it with the class definition
+PYTHON_FILE=$prob_path"$1.py"
+cat <<EOL > "$PYTHON_FILE"
+class $1:
+
+    def solution(self):
+        ...
+EOL
+
 
 test_path="tests/problems/"
 # Make blank unit tests
-touch $test_path"test_$1".py
-echo "from $1 import *" >> $test_path"test_$1".py
+TEST_FILE=$test_path"test_$1.py"
+cat <<EOL > "$TEST_FILE"
+import pytest
+from $1 import *
+
+def test_solution():
+    ...
+
+EOL
