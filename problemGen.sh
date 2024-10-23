@@ -9,10 +9,7 @@ fi
 
 prob_path="src/problems/"
 # Make problem directory within src/problems
-mkdir $prob_path"$1"
-touch $prob_path"$1"/README.md
-touch $prob_path"$1"/"$1".py
-touch $prob_path"$1"/__init__.py
+touch $prob_path"$1".py
 
 test_path="tests/problems/"
 # Make blank unit tests
