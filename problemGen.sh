@@ -37,6 +37,10 @@ README_FILE=$path/"README.md"
 cat <<EOL > "$README_FILE"
 # Problem: $1
 
+## Question:
+
+Not yet documented.
+
 ## Solution:
 
 Not yet documented.
