@@ -6,12 +6,12 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-
-prob_path="src/"
+path="src/problems/$1"
+mkdir "$path"
 domain="https://leetcode.com/problems/${1//_/-}/"
 
-# Create the Python file and initialize it with the class definition
-PYTHON_FILE=$prob_path"$1.py"
+# Make python file
+PYTHON_FILE=$path/"$1.py"
 cat <<EOL > "$PYTHON_FILE"
 # $domain
 
@@ -21,15 +21,25 @@ class $1:
         ...
 EOL
 
-
-test_path="tests/"
-# Make blank unit tests
-TEST_FILE=$test_path"test_$1.py"
+# Make unit test
+TEST_FILE=$path/"test_$1.py"
 cat <<EOL > "$TEST_FILE"
 import pytest
-from src.$1 import *
+from $1 import *
 
 def test_not_implemented():
     assert False
+
+EOL
+
+# Make README.md
+README_FILE=$path/"README.md"
+cat <<EOL > "$README_FILE"
+# Problem: $1
+
+## Solution:
+
+Not yet documented.
+
 
 EOL
