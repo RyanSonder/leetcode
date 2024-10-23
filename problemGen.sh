@@ -17,7 +17,7 @@ cat <<EOL > "$PYTHON_FILE"
 
 class $1:
 
-    def solution(self):
+    def solution():
         ...
 EOL
 
