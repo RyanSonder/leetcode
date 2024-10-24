@@ -27,8 +27,17 @@ cat <<EOL > "$TEST_FILE"
 import pytest
 from $1 import *
 
-def test_not_implemented():
-    assert False
+def test_$1_1(benchmark):
+    result = benchmark($1.solution, ...)
+    assert result == ...
+
+def test_$1_2(benchmark):
+    result = benchmark($1.solution, ...)
+    assert result == ...
+
+def test_$1_3(benchmark):
+    result = benchmark($1.solution, ...)
+    assert result == ...
 
 EOL
 
