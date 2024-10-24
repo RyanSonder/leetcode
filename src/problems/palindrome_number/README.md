@@ -11,13 +11,16 @@ Given an integer x, return true if x is a palindrome, and false otherwise.
 
 $O(log{_1}{_0}{n})$
 
+
 ### Runtime:
 
 5 ms : Beats 97.92%
 
+
 ### Memory:
 
 16.78 MB : Beats 15.71%
+
 
 ### Thought Process:
 
