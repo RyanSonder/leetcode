@@ -29,6 +29,6 @@ def test_palindrome_number_7(benchmark):
     result = benchmark(palindrome_number.solution, x=123454320)
     assert result == False # 8.09 : 831.33 ? 2076.14
 
-def test_palindrom_number_8(benchmark):
+def test_palindrome_number_8(benchmark):
     result = benchmark(palindrome_number.solution, x=-12345678987654321)
     assert result == False
