@@ -7,7 +7,19 @@ Given an integer x, return true if x is a palindrome, and false otherwise.
 
 ## Solution:
 
-### Time Complexity: $O(log{_1}{_0}{n})$
+### Time Complexity: 
+
+$O(log{_1}{_0}{n})$
+
+### Runtime:
+
+5 ms : Beats 97.92%
+
+### Memory:
+
+16.78 MB : Beats 15.71%
+
+### Thought Process:
 
 A palindrome only occurs when a number is the same written both forward and backward. Thus, a negative number can never be a palindrom.
 
