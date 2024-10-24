@@ -22,6 +22,8 @@ $O(n)$
 
 17.88 MB : Beats 15.78%
 
+### Thought Process:
+
 Since hashtables generally have an O(1) runtime when there are no collisions, I can optimize this with the following steps:
 
 For index in list:
