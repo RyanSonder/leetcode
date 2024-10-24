@@ -15,3 +15,7 @@ def test_roman_to_integer_2(benchmark):
 def test_roman_to_integer_3(benchmark):
     result = benchmark(roman_to_integer.solution, "MCMXCIV")
     assert result == 1994
+
+def test_roman_to_integer_4(benchmark):
+    result = benchmark(roman_to_integer.solution, "MMMMCCCCXXXXIIII")
+    assert result == 4444
