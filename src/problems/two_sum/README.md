@@ -10,6 +10,18 @@ You can return the answer in any order.
 
 ## Solution:
 
+### Time Complexity:
+
+$O(n)$
+
+### Runtime:
+
+0 ms : Beats 100%
+
+### Memory:
+
+17.88 MB : Beats 15.78%
+
 Since hashtables generally have an O(1) runtime when there are no collisions, I can optimize this with the following steps:
 
 For index in list:
