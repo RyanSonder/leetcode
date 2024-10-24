@@ -27,20 +27,33 @@ Given a roman numeral, convert it to an integer.
 
 ### Time Complexity:
 
-$O()$
+$O(n)$
 
 
 ### Runtime:
 
-x ms : Beats y%
+7 ms : Beats 95.74%%
 
 
 ### Memory:
 
-x MB : Beats y%
+16.77 MB : Beats 21.25%
 
 
 ### Thought Process:
 
-Not yet documented.
+1. We initialize the values of the numerals with a dictionary, since dictionaries can be used in constant time.
 
+2. We initialize ```python sum = 0``` to keep a running total as we iterate through the string.
+
+3. We initialize ```python flag = False``` to keep track of whether we skip a character due to the doubles in the dictionary.
+
+4. Now we use a for loop to iterate through the string.
+
+> If the flag is true, disable the flag and skip
+
+> If a double char sequence is detected in the dict, use that value and enable the flag
+
+> If no double char sequence is detected, just use the single character
+
+5. Return the final sum
