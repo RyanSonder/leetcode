@@ -41,9 +41,26 @@ cat <<EOL > "$README_FILE"
 
 Not yet documented.
 
+
 ## Solution:
 
-Not yet documented.
+### Time Complexity:
 
+\$O()\$
+
+
+### Runtime:
+
+x ms : Beats y%
+
+
+### Memory:
+
+x MB : Beats y%
+
+
+### Thought Process:
+
+Not yet documented.
 
 EOL
