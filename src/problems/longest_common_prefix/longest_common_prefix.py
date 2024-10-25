@@ -12,10 +12,11 @@ class longest_common_prefix:
         for str in strs[1:]:
         
             i = 1
-            while i <= min(len(str), len(gcs)):
+            while i <= len(gcs):
                 if str[:i] != gcs[:i]:
                     break
                 i += 1
-            gcs = gcs[:i - 1]
+
+            gcs = gcs[:i-1]
 
         return gcs
