@@ -13,6 +13,6 @@ def test_valid_anagram_3(benchmark): # Base case
     result = benchmark(valid_anagram.solution, "long", "short")
     assert result == False
 
-def test_valid_anagram_3(benchmark): # Worst case
+def test_valid_anagram_4(benchmark): # Worst case
     result = benchmark(valid_anagram.solution, "conversationalists", "conservationalists")
     assert result == True
