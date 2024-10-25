@@ -17,6 +17,10 @@ def test_longest_common_prefix_4(benchmark): # Base case
     result = benchmark(longest_common_prefix.solution, ["argument"])
     assert result == "argument"
 
-def test_longest_common_prefix_5(benchmark): # Base case
+def test_longest_common_prefix_5(benchmark): 
     result = benchmark(longest_common_prefix.solution, ["a", "b"])
     assert result == ""
+
+def test_longest_common_prefix_6(benchmark): 
+    result = benchmark(longest_common_prefix.solution, ["value", "valuable", "vat"])
+    assert result == "va"
