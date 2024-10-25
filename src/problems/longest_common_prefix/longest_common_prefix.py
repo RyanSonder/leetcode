@@ -4,16 +4,12 @@ class longest_common_prefix:
 
     def solution(strs):
         
-        if len(strs) is 1: # Base case
+        if len(strs) is 1:
             return strs[0]
         
-        # Check each string in the array
         gcs = strs[0]
+        
         for str in strs[1:]:
-            
-            for i in range(min(len(str), len(gcs))):
-                if str[:i] != gcs[:i]:
-                    continue
         
             i = 1
             while i <= min(len(str), len(gcs)):
