@@ -7,8 +7,6 @@ class valid_anagram:
 
         if len(s) != len(t): 
             return False
-        if s == t: 
-            return True
 
         d = {} 
         for i in range(len(s)): 
