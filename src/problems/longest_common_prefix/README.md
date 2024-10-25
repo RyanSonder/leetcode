@@ -11,7 +11,7 @@ If there is no common prefix, return an empty string "".
 
 ### Time Complexity:
 
-$O(m*n)$
+$O(n*m)$
 
 n is len of the array
 m is len of the strings
@@ -19,12 +19,12 @@ m is len of the strings
 
 ### Runtime:
 
-11 ms : Beats 90.14%
+1 ms : Beats 93.88%
 
 
 ### Memory:
 
-16.84 MB : Beats 9.64%
+16.75 MB : Beats 9.64%
 
 
 ### Thought Process:
