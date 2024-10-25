@@ -14,22 +14,23 @@ $O(n)$
 
 ### Runtime:
 
-15 ms : Beats 95.45%
+12 ms : Beats 96.44%
 
 
 ### Memory:
 
-16.76 MB : Beats 94.31%
+16.80 MB : Beats 94.31%
 
 
 ### Thought Process:
 
-1. There is a base case where the strings are different length. Checking this is O(1) time, so easy to do.
 
-2. We store the characters in s into a dict such that {char: occurrences}
+1. There exists a base case that can be tested in O(1) time. If the lengths of s and t do not match, the anagram is invalid.
 
-3. We check the dict, decrementing as we go to indicate traversal. If a char not present appears or there are too many copy letters, we know an anagram is invalid.
+2. Initialize an empty dictionary.
 
-4. We now check the dict to make sure every value is 0. If any value is not 0, then s and t are not anagrams.
+3. Iterate through both strings at the same time. For each letter, increment if in s, and decrement if in t.
 
-5. If everything passes these tests, it must be an anagram.
+4. Iterate through the dictionary. If the strings are anagrams, the values should all have zeroed out. If any values are not zeroed out, then return false.
+
+5. The check passed, return true.
