@@ -30,8 +30,8 @@ $O(nlog(n))$
 
 The problem is deceptively simple.
 
-1. We make a default dictionary to easily and quickly count the number of occurrences of each value in the nums array.
+1. We make a dictionary to easily and quickly count the number of occurrences of each value in the nums array.
 
-2. Because we are using a defaultdict instead of a regular dict, line 12 will both create entries and increment them.
+2. The for loop handles counting.
 
 3. Return a k-sized slice after using sorted to turn the dict into an array of keys sorted by their values.
