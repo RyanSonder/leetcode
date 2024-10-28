@@ -13,20 +13,21 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 
 ### Time Complexity:
 
-$O()$
+$O(n)$
 
 
 ### Runtime:
 
-x ms : Beats y%
+26 ms : Beats 51.48%
 
 
 ### Memory:
 
-x MB : Beats y%
+22.46 MB : Beats 92.96%
 
 
 ### Thought Process:
 
-Not yet documented.
+Since answer[i] is not the product of nums[i], that means that it must be the product of all the numbers to the right and to the left. We can summarize this by calling the left numbers ```prefix``` and the right numbers ```suffix```. answer[i] is always going to be ```prefix*suffix```.
 
+We can use loops to keep a running calculation of the ```prefix``` and ```suffix``` variables. The first loop appends each prefix to the ```prods``` array. The second loop performs the aformentioned ```prefix*suffix``` calculation.
