@@ -6,7 +6,10 @@ from typing import List
 class longest_square_streak_in_an_array:
 
     def solution(nums: List[int]) -> int:
-               
+        ...       
+        
+        
+    def recursive_solution(nums: List[int]) -> int:
         def recur(nums: List[int], num: int):
             if num**2 in  nums:
                 return recur(nums, num**2) + 1
@@ -22,4 +25,3 @@ class longest_square_streak_in_an_array:
                 longest = streak
             
         return longest if longest != 1 else -1
-        
