@@ -13,3 +13,6 @@ def test_circular_sentence_3(benchmark):
     result = benchmark(circular_sentence.solution, "Leetcode is cool")
     assert result == False
 
+def test_circular_sentence_4(benchmark):
+    result = benchmark(circular_sentence.solution, "leetcode exercises sound delightful leetcode exercises sound delightful leetcode exercises sound delightful leetcode exercises sound delightful leetcode exercises sound delightful leetcode exercises sound delightful")
+    assert result == True
