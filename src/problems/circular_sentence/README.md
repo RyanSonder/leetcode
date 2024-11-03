@@ -22,20 +22,21 @@ Given a string sentence, return true _if it is circular_. Otherwise, return fals
 
 ### Time Complexity:
 
-$O()$
+$O(n)$
 
 
 ### Runtime:
 
-x ms : Beats y%
+0 ms : Beats 100%
 
 
 ### Memory:
 
-x MB : Beats y%
+16.58 MB : Beats 46.28%
 
 
 ### Thought Process:
 
-Not yet documented.
+This problem is exceedingly easy. This method splits the sentence into a list of words, and iterates through the words and checks if the last letter of the previous word matches the first letter of the next word. 
 
+Then at the end there is a check to make sure the last letter of the last word is equal to the first letter of the first word.
