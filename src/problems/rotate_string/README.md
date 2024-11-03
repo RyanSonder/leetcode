@@ -13,20 +13,19 @@ For example, if s = "abcde", then it will be "bcdea" after one shift.
 
 ### Time Complexity:
 
-$O()$
+$O(n<sup>2</sup>)$
 
 
 ### Runtime:
 
-x ms : Beats y%
+0 ms : Beats 100%
 
 
 ### Memory:
 
-x MB : Beats y%
+16.70 MB : Beats 9.22%
 
 
 ### Thought Process:
 
-Not yet documented.
-
+First, we check characters in goal until we find one that matches the first character in s. If we find a match, match every letter in both strings based on the offset. If there is a discrepency, exit the inner loop and search for a new match for s[0]. Repeat until a solution is found or there are no more matches.
