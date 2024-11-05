@@ -19,3 +19,8 @@ If benchmark is not installed: ```pip install pytest-benchmark```
 ## Readme
 
 The readmes for each individual problem contains several bits of information. Primarily, it contains the problem description and my solution explanation. Secondarily, it contains my estimated running time in O-notation, the LeetCode running time in ms, and the LeetCode memory usage in MB.
+
+## Disclaimer
+
+The purpose of LeetCode is to challenge users to develop their problem solving skills. When you access this repository, it is up to you how you use the algorithms and techniques I upload here. Please do not just use this repository as a way to cheese LeetCode probelms; try to understand the algorithms that make the solutions efficient. I know many people try to solve as many LeetCode problems as possible for bragging rights, but copy-pasting my solutions will not develop any coding or problem solving skills. 
+
