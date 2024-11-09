@@ -11,20 +11,19 @@ Return true if num is balanced, otherwise return false.
 
 ### Time Complexity:
 
-$O()$
+$O(n)$
 
 
 ### Runtime:
 
-x ms : Beats y%
+0 ms : Beats 100%
 
 
 ### Memory:
 
-x MB : Beats y%
+16.75 MB : Beats 9.14%
 
 
 ### Thought Process:
 
-Not yet documented.
-
+This solution uses a temporary variable to keep a running total of the numbers. As we iterate through each digit, we add that digit and then multiply the temporary variable by -1. This means that we only do not need to keep track of when to add and when to subtract. No matter what, if the number is balanced, the final answer should be 0.
