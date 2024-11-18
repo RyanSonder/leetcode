@@ -137,17 +137,20 @@ def generate_directory(local_path: str) -> None:
 
 
 def generate_files(tokenized_problem: List[str]) -> None:
+    # Create the necessary variables; should I make this a dictionary?
     class_name = "".join(word.title() for word in tokenized_problem)
     file_name = "_".join(tokenized_problem)
     local_path = f"src/problems/{file_name}"
     title = " ".join(tokenized_problem).title()
     url = get_leetcode_url(tokenized_problem)
 
+    # Use the variables to generate the necessary files
     generate_directory(local_path)
     generate_class(title, class_name, local_path, file_name)
     generate_test(class_name, local_path, file_name)
     generate_readme(title, url, local_path)
 
+    print("Generation successful")
 
 if __name__ == "__main__":
     main()
