@@ -1,0 +1,7 @@
+# title
+
+
+class class_name:
+
+    def solution(self):
+        ...
