@@ -2,13 +2,13 @@ import pytest
 from file_name import *
 
 def test_file_name_1(benchmark):
-    result = benchmark(class_name.solution, ...)
+    result = benchmark(class_name.solution, class_name, ...)
     assert result == ...
 
 def test_file_name_2(benchmark):
-    result = benchmark(class_name.solution, ...)
+    result = benchmark(class_name.solution, class_name, ...)
     assert result == ...
 
 def test_file_name_3(benchmark):
-    result = benchmark(class_name.solution, ...)
+    result = benchmark(class_name.solution, class_name, ...)
     assert result == ...
