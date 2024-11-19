@@ -1,26 +1,64 @@
-# Leetcode Solutions
+# Ryan Sonderman's Leetcode Solutions
 
-This is the repo where I track the code used for my completed LeetCode questions.
+This repository is for uploading and managing my LeetCode solutions. 
 
-In the main directory, I have a bash script called problemGen.sh, which automatically generates a subdirectory in src containing skeletons of the source code, test code, and readme.
+## Description
 
-## Source code
+I have a script `problem_gen.py` that automatically creates a problem template given a problem name. When called, the script will generate a directory with a class, test, and readme template. 
 
-Each problem is completed using Python3, generally with as few external methods as possible.
+Since I would like to focus on improving my Python right now, all solutions are done with Python3. 
 
-## Testing
+The tests that are generated with `problem_gen.py` utilize benchmark to assess their speed. While I recognize the use of Big Oh runtime analysis, gains can also be had with small optimizations. Using the benchmarks, I try to optimize my solutions as much as possible. My goal is to come up with solutions that are efficient both in Big Oh running time, as well as practical running time. 
 
-I always use the test cases provided by LeetCode, but I often add my own tests to cover edge cases and forse a worst-case running time. I use pytest-benchmark to generate mean runtimes for the solutions. With the mean runtimes, I will tweak the solution until I am happy with the efficiency.
+## Getting Started
 
-If pytest is not installed: ```pip install pytest```
+### Dependencies
 
-If benchmark is not installed: ```pip install pytest-benchmark```
+`pytest` is used to run unit tests on my solutions.
 
-## Readme
+`pytest-benchmark` is used to analyze execution speed of my solutions.
 
-The readmes for each individual problem contains several bits of information. Primarily, it contains the problem description and my solution explanation. Secondarily, it contains my estimated running time in O-notation, the LeetCode running time in ms, and the LeetCode memory usage in MB.
+### Installing
 
-## Disclaimer
+You can find the latest release on the [releases](https://github.com/RyanSonder/leetcode/releases) page.
 
-The purpose of LeetCode is to challenge users to develop their problem solving skills. When you access this repository, it is up to you how you use the algorithms and techniques I upload here. Please do not just use this repository as a way to cheese LeetCode probelms; try to understand the algorithms that make the solutions efficient. I know many people try to solve as many LeetCode problems as possible for bragging rights, but copy-pasting my solutions will not develop any coding or problem solving skills. 
+Download and extract the contents of the zipped files.
 
+### Executing the program
+
+#### Generating a new problem template
+
+While in the `leetcode` directory, run the generation script by typing `python3 problem_gen.py` in the terminal. The script will prompt you for the name of the problem and automatically generate a new directory in `src/problems/` containing the templates.
+
+#### Coding your solutions
+
+Unfortunately, I simply didn't have the time to code up a comprehensive Python IDE, so you will have to use your IDE of choice. I know, I'll try better in the future...
+
+#### Running Tests
+
+Once you have written a solution and entered the test cases, you can run a test by typing `pytest /src/problems/problem_name/` in the terminal. Alternatively, if you like waiting, you can just type `pytest` to run every single test case one after the other. Pytest will check accuracy and run benchmarks on the problems.
+
+## Authors
+
+Ryan Sonderman
+
+@RyanSonder
+
+e: ryansonderpersonal@gmail.com
+
+---
+
+Please contact me if you have any questions or changes you would like to see.
+
+## Version History
+
+* 1.0.0
+* * Initial release launched with 13 completed problems
+
+## License
+
+MIT License
+
+## Acknowledgements
+
+* https://www.github.com
